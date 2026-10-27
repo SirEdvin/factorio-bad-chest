@@ -1,0 +1,8 @@
+{
+  "name": "rec-blue-plus-tests",
+  "version": "0.1.0",
+  "title": "Recursive Blueprints+ recipe regression tests",
+  "author": "SirEdvin",
+  "factorio_version": "2.1",
+  "dependencies": ["base >= 2.1.9", "rec-blue-plus", "? space-age"]
+}

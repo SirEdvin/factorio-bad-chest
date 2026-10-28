@@ -1,4 +1,9 @@
 ---------------------------------------------------------------------------------------------------
+Version: 1.5.4
+Date: 2026-10-28
+  Bugfixes:
+    - Fixed blueprint parameterization failing when a logistic request section has no filters.
+---------------------------------------------------------------------------------------------------
 Version: 1.5.3
 Date: 2026-10-27
   Bugfixes:

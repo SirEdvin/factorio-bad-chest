@@ -15,4 +15,6 @@ Require both commands to exit successfully, `RBP command 2 deployment passed` in
 
 The fixture checks single-category replacement, a match only in the second recipe category, incompatible and unknown recipes, and quality preservation when enabled. It then drives a real B.A.D. Chest with command 2, `0=23`, `1=24`, and matching recipe signals, verifying two deployed ghosts and an unchanged source blueprint. Space Age uses foundries with `casting-copper-cable` and `molten-copper-from-lava`; base uses assemblers. Unmodified upstream 1.5.2 fails with `LuaRecipePrototype doesn't contain key category`.
 
+The empty-request regression uses the reporter's exact three circuit signals: `rbp-command=2`, `signal-0=1012`, and recipe `advanced-circuit=1012`. Its blueprint contains an assembler with `parameter-0` and a requester chest with an empty section. It checks native serialization of absent/empty requests, mixed empty/populated/grouped sections, item replacement and quality/count preservation, actual ghost deployment, and an unchanged source blueprint. The published 1.5.3 ZIP fails at `parameterization.lua:254` because Factorio omits `filters` for an empty section.
+
 The test mod is not included in release ZIPs. These are headless runtime/circuit checks, not graphical-client or multiplayer acceptance.

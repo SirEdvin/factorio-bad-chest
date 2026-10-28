@@ -250,7 +250,7 @@ local function parametric(signals, bp)
           local rf = g.request_filters.sections
           if rf then
             for _, s1 in pairs(rf) do
-              if not s1.group then
+              if not s1.group and s1.filters then
                 for _, f in pairs(s1.filters) do
                   replace_filter(f, s)
                 end
